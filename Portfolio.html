@@ -6,10 +6,17 @@
         <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
     </head>
     <body>
-        <div class="popup"></div>
-        <div></div>
+        <div id="1" class="popup" onclick="closePopup('1')" style="display:none; background-image: url(Stuff/CartoonItems.jpg);"><p class="popupMessage">Click on picture to close popup</p></div>
+        <div id="opa" style="display:none"></div>
+        <div id="two" class="popup" onclick="closePopup('two')" style="display:none; background-image: url(Stuff/IMG_0699~2.jpg);"><p class="popupMessage">Click on picture to close popup</p></div>
+        <div id="three" class="popup" onclick="closePopup('three')" style="display:none;"><p class="popupMessage">Click here to close popup</p><iframe src="https://www.youtube.com/embed/Rr1EAiWNvZY?si=4_SJkNPjq_jBbVsL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div id="four" class="popup" onclick="closePopup('four')" style="display:none; background-image: url(Stuff/VectorPortrait2.jpg);"><p class="popupMessage">Click on picture to close popup</p></div>
         <nav id="theHeader">
-        <header><h1>Portfolio For Anna Youngstrom</h1></header>
+            <div id="grids">
+                <div id="thing"><a href="https://docs.google.com/document/d/1MQ_96p5OF9AlnMC7LtcNvivawBP6GUXO59NtLS8rcxM/edit?usp=sharing" style="color:black;">Resume</a></div>
+                <div id="thing2"><a href="https://github.com/YoungAnn002/Portfolio"><img id="git1" src= "https://cdn-icons-png.flaticon.com/512/25/25231.png"></a></div>
+            </div>
+            <header><h1>Portfolio For Anna Youngstrom</h1></header>
         </nav>
         <div class="main">
             <div class="side"><div class="small">
@@ -18,7 +25,7 @@
                     This website is a project I worked on in my web design class. It uses a lot of fun little
                     elements including changing the look, a little animation in the animal list screen
                     and going to different screens on a button press.
-                    <a href="https://github.com/YoungAnn002/WebProject">Here is the github link for this project.</a>
+                    <a href="https://github.com/YoungAnn002/WebProject"><img id="git2" src="https://www.shareicon.net/data/2015/09/15/101512_logo_512x512.png"></a>
                 </p>
             </div></div>
             <div class="side">
@@ -29,7 +36,7 @@
             </div>
             <div class="side">
                 <div class="pic" style="background-image:url(Stuff/CartoonItems.jpg);">
-                    <div class="overlay"><div class="inside">Click to expand</div></div>
+                    <div class="overlay"><div class="inside" onclick="openPopup('1')">Click to expand</div></div>
                 </div>
             </div>
             <div class="side"><div class="small">
@@ -39,10 +46,44 @@
                     everyday objects in my room and drew them in a more cartoon-like way.
                 </p>
             </div></div>
-            <div class="side"><div class="small"></div></div>
-            <div class="side"><div class="small"></div></div>
-            <div class="side"><div class="small"></div></div>
-            <div class="side"><div class="small"></div></div>
+            <div class="side"><div class="small">
+                <h2>Music Video Animation</h2>
+                <p id="help">
+                    This animation is one I did a while ago on a software called blender. This software works very similar
+                    to epic game's unreal engine and has helped me start messing around with game designing software.
+                    I was interested in animation so I learned and made this on my own.
+                </p>
+            </div></div>
+            <div class="side">
+                <div class="pic" id="animation" style="background-image: url(Stuff/Render0001.jpg);">
+                    <div class="overlay"><div class="inside" onclick="openPopup('three')">Click to expand</div></div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="pic" id="candle" style="background-image:url(Stuff/IMG_0699~2.jpg);">
+                    <div class="overlay"><div class="inside" onclick="openPopup('two')">Click to expand</div></div>
+                </div>
+            </div>
+            <div class="side"><div class="small">
+                <h2>Final Render</h2>
+                <p>
+                    This drawing is another one I did in a drawing class and is a render of many objects
+                    including a bottle, wood block and an egg. This was probably one of the hardest drawings
+                    I've done and was my final project.
+                </p>
+            </div></div>
+            <div class="side"><div class="small">
+                <h2>Vector Portrait</h2>
+                <p>
+                    This drawing is one I did for my brother, he had a picture taken of him in marching
+                    band so I took it and made a vector portrait of him in Adobe Illustrator.
+                </p>
+            </div></div>
+            <div class="side">
+                <div class="pic" id="candle" style="background-image:url(Stuff/VectorPortrait2.jpg);">
+                    <div class="overlay"><div class="inside" onclick="openPopup('four')">Click to expand</div></div>
+                </div>
+            </div>
         </div>
     </body>
     <script src="Portfolio.js"></script>
