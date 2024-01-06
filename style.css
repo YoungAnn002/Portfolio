@@ -75,6 +75,15 @@ a{
 #three .popupMessage{
     font-size: 15pt;
 }
+#five{
+    width:20%;
+    margin-left:39%;
+    font-size: 12pt;
+}
+#figma{
+    background-size:27%;
+    background-position: 50%;
+}
 #help{
     font-size:17pt
 }
@@ -161,7 +170,7 @@ iframe{
 .pic:hover div{
     display:table-cell;
 }
-#candle{
+.candle{
     background-size:45%;
     background-position:50%;
 }
