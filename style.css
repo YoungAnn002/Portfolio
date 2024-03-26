@@ -145,7 +145,6 @@ iframe{
     background-size:cover;
     background-repeat: no-repeat;
     position:relative;
-    align-content: center;
 }
 .pic:hover{
     opacity: .6;
