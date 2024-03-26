@@ -144,7 +144,7 @@ iframe{
     background-color:rgb(90, 124, 186);
     background-size:cover;
     background-repeat: no-repeat;
-    position:relative;
+    /*position:relative;*/
 }
 .pic:hover{
     opacity: .6;
